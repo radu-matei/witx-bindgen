@@ -15,6 +15,6 @@ impl Profile {
     /// Determines if the profile provides the given import.
     pub fn provides(&self, module: &str, _field: Option<&str>, _ty: &FuncType) -> bool {
         // TODO: provide some actual implementation for this
-        module == "wasi_snapshot_preview1"
+        module == "wasi_snapshot_preview1" || module == "wasi_experimental_http"
     }
 }
